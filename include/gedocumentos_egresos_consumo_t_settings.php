@@ -28,10 +28,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsgedocumentos_egresos_consumo_t["Spanish"]["as_nroasiento_fk"] = "Asiento";
 	$fieldToolTipsgedocumentos_egresos_consumo_t["Spanish"]["as_nroasiento_fk"] = "";
 	$placeHoldersgedocumentos_egresos_consumo_t["Spanish"]["as_nroasiento_fk"] = "";
-	$fieldLabelsgedocumentos_egresos_consumo_t["Spanish"]["do_detalle"] = "Descripción del egreso";
+	$fieldLabelsgedocumentos_egresos_consumo_t["Spanish"]["do_detalle"] = "Descripción del traslado";
 	$fieldToolTipsgedocumentos_egresos_consumo_t["Spanish"]["do_detalle"] = "";
 	$placeHoldersgedocumentos_egresos_consumo_t["Spanish"]["do_detalle"] = "";
-	$fieldLabelsgedocumentos_egresos_consumo_t["Spanish"]["do_fechadoc"] = "Fecha del egreso";
+	$fieldLabelsgedocumentos_egresos_consumo_t["Spanish"]["do_fechadoc"] = "Fecha del traslado";
 	$fieldToolTipsgedocumentos_egresos_consumo_t["Spanish"]["do_fechadoc"] = "";
 	$placeHoldersgedocumentos_egresos_consumo_t["Spanish"]["do_fechadoc"] = "";
 	$fieldLabelsgedocumentos_egresos_consumo_t["Spanish"]["do_file"] = "Anexo";
@@ -1867,7 +1867,7 @@ $tdatagedocumentos_egresos_consumo_t[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Lookup wizard");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1877,39 +1877,6 @@ $tdatagedocumentos_egresos_consumo_t[".hideMobileList"] = array();
 	
 	
 
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "contractor_master";
-		$edata["listPageId"] = "list";
-		$edata["autoCompleteFieldsOnEdit"] = 1;
-	$edata["autoCompleteFields"] = array();
-		$edata["autoCompleteFields"][] = array('masterF'=>"do_tipodoc", 'lookupF'=>"contractor_type");
-	$edata["autoCompleteFields"][] = array('masterF'=>"docnomproveedor", 'lookupF'=>"contractor_nombresfull");
-	$edata["autoCompleteFields"][] = array('masterF'=>"do_email", 'lookupF'=>"contractor_email");
-	$edata["LCType"] = 2;
-
-	
-		
-	$edata["LinkField"] = "contractor_doc_id";
-	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "contractor_doc_id";
-
-	
-
-	
-	$edata["LookupOrderBy"] = "";
-
-	
-	
-		$edata["AllowToAdd"] = true;
-			$edata["addPageId"] = "add";
-
-	
-
-	
-	
-	
-// End Lookup Settings
 
 
 		$edata["IsRequired"] = true;
@@ -1933,8 +1900,7 @@ $tdatagedocumentos_egresos_consumo_t[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 //	End validation
 
@@ -3549,7 +3515,7 @@ $tdatagedocumentos_egresos_consumo_t[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -3574,19 +3540,15 @@ $tdatagedocumentos_egresos_consumo_t[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 //	End validation
 

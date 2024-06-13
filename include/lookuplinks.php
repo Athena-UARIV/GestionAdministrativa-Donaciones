@@ -1181,13 +1181,6 @@ function InitLookupLinks()
 			$lookupTableLinks["tparam_tipo_movimiento"]["gedocumentos_egresos_consumo_t.do_tipomov"] = array();
 		}
 		$lookupTableLinks["tparam_tipo_movimiento"]["gedocumentos_egresos_consumo_t.do_tipomov"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "do_tipomov", "page" => "edit");
-		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
-			$lookupTableLinks["contractor_master"] = array();
-		}
-		if( !isset( $lookupTableLinks["contractor_master"]["gedocumentos_egresos_consumo_t.doccnit"] )) {
-			$lookupTableLinks["contractor_master"]["gedocumentos_egresos_consumo_t.doccnit"] = array();
-		}
-		$lookupTableLinks["contractor_master"]["gedocumentos_egresos_consumo_t.doccnit"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "doccnit", "page" => "edit");
 		if( !isset( $lookupTableLinks["geclasedocto"] ) ) {
 			$lookupTableLinks["geclasedocto"] = array();
 		}

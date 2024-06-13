@@ -166,7 +166,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"<h3><strong style=\"color: rgb(107, 36, 178);\">Ingreso de doxcumentos</strong></h3>","hidden":"{$item_hide_text}","bold":true,"font":"Roboto","isHtml":true},
+			{"text":"<h3><strong style=\"color: rgb(107, 36, 178);\">Ingreso de documentos</strong></h3>","hidden":"{$item_hide_text}","bold":true,"font":"Roboto","isHtml":true},
 				
 		  ],
   "border": [ false, false, false, false ],

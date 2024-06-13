@@ -1209,13 +1209,13 @@ function InitLookupLinks()
 			$lookupTableLinks["dependencia"]["gedocumentos_egresos_consumo_t.do_dep"] = array();
 		}
 		$lookupTableLinks["dependencia"]["gedocumentos_egresos_consumo_t.do_dep"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "do_dep", "page" => "edit");
-		if( !isset( $lookupTableLinks["dependencias_001"] ) ) {
-			$lookupTableLinks["dependencias_001"] = array();
+		if( !isset( $lookupTableLinks["tparam_direcc_territoriales"] ) ) {
+			$lookupTableLinks["tparam_direcc_territoriales"] = array();
 		}
-		if( !isset( $lookupTableLinks["dependencias_001"]["gedocumentos_egresos_consumo_t.do_depsup"] )) {
-			$lookupTableLinks["dependencias_001"]["gedocumentos_egresos_consumo_t.do_depsup"] = array();
+		if( !isset( $lookupTableLinks["tparam_direcc_territoriales"]["gedocumentos_egresos_consumo_t.do_depsup"] )) {
+			$lookupTableLinks["tparam_direcc_territoriales"]["gedocumentos_egresos_consumo_t.do_depsup"] = array();
 		}
-		$lookupTableLinks["dependencias_001"]["gedocumentos_egresos_consumo_t.do_depsup"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "do_depsup", "page" => "edit");
+		$lookupTableLinks["tparam_direcc_territoriales"]["gedocumentos_egresos_consumo_t.do_depsup"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "do_depsup", "page" => "edit");
 		if( !isset( $lookupTableLinks["q_ctrl_saldo_consumo_consulta"] ) ) {
 			$lookupTableLinks["q_ctrl_saldo_consumo_consulta"] = array();
 		}

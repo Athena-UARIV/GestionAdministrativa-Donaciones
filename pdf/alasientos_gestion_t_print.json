@@ -89,13 +89,10 @@ pdfDocument = {
 													{BEGIN row_grid_1}
 							"%",
 							{END row_grid_1}
+													{END grid_row}
 																								{BEGIN row_grid_2}
 							"%",
 							{END row_grid_2}
-													{END grid_row}
-																								{BEGIN row_grid_3}
-							"%",
-							{END row_grid_3}
 															],
 							
 				body: [
@@ -534,77 +531,12 @@ pdfDocument = {
 {END cellblock_grid_cell_field4}
 											],
 				{END row_grid_1}
-						{BEGIN row_grid_2}
-				[
-																{BEGIN cellblock_grid_cell_dpreview}
-{
-	cellId: 'cell_dpreview',
-	col:0,
-	row:0,
-				style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-					{BEGIN colspan_grid_cell_dpreview}
-			colSpan: {$colspan_grid_cell_dpreview},
-			{END colspan_grid_cell_dpreview}
-		
-		
-	
-			
-	
-			"stack": [
-		
-				
-			 {BEGIN details_gedocumentos_egresos_consumo_t}
-			{$displayDetailTable_gedocumentos_egresos_consumo_t }
-		{END details_gedocumentos_egresos_consumo_t},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_grid_cell_dpreview}
-																		{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  1,
-				text: '',
-				compensateColspan: true
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  2,
-				text: '',
-				compensateColspan: true
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  3,
-				text: '',
-				compensateColspan: true
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  4,
-				text: '',
-				compensateColspan: true
-			},
-							],
-				{END row_grid_2}
 		
 		{END grid_record}
 	{END grid_row}
 			
 					
-				{BEGIN row_grid_3}
+				{BEGIN row_grid_2}
 				[
 																{BEGIN cellblock_grid_footcell_field}
 {
@@ -737,7 +669,7 @@ pdfDocument = {
 
 {END cellblock_grid_footcell_field4}
 											],
-				{END row_grid_3}
+				{END row_grid_2}
 		
 				
 									]

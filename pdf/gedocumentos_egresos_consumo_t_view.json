@@ -511,8 +511,10 @@ pdfDocument = {
 	
 			"stack": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t co_cuentacontable }","bold":true},{"text":{$co_cuentacontable_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
      
@@ -581,6 +583,9 @@ pdfDocument = {
 		
 	//	dynamic colspan/rowspan
 
+					{BEGIN colspan_grid_c10}
+			colSpan: {$colspan_grid_c10},
+			{END colspan_grid_c10}
 		
 		
 	
@@ -589,7 +594,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t doccnit }","bold":true},{"text":{$doccnit_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t do_depsup }","bold":true},{"text":{$do_depsup_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -599,34 +604,14 @@ pdfDocument = {
       },
 
 {END cellblock_grid_c10}
-																							{BEGIN cellblock_grid_c11}
-{
-	cellId: 'c11',
-	col:0,
-	row:0,
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t do_tipodoc }","bold":true},{"text":{$do_tipodoc_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_grid_c11}
-																							{BEGIN cellblock_grid_c12}
+																		{ 
+				cellId: 'c10',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c12}
 {
 	cellId: 'c12',
 	col:0,
@@ -642,10 +627,8 @@ pdfDocument = {
 	
 			"stack": [
 		
-				
-			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t docnomproveedor }","bold":true},{"text":{$docnomproveedor_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
      
@@ -674,7 +657,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t do_email }","bold":true},{"text":{$do_email_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t docnomproveedor }","bold":true},{"text":{$docnomproveedor_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -701,7 +684,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t do_depsup }","bold":true},{"text":{$do_depsup_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t doccnit }","bold":true},{"text":{$doccnit_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -728,7 +711,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t do_dep }","bold":true},{"text":{$do_dep_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo_t do_email }","bold":true},{"text":{$do_email_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

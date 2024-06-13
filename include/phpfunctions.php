@@ -1297,11 +1297,11 @@ function GetDefaultValue($field, $ptype, $table="")
 	}
 				if($table=="gedocumentos_egresos_consumo_t" && $field=="do_tipomov")
 	{
-		return 2;
+		return 3;
 	}
 				if($table=="gedocumentos_egresos_consumo_t" && $field=="doclasedoc")
 	{
-		return 310;
+		return 210;
 	}
 				if($table=="gedocumentos_egresos_consumo_t" && $field=="sys_user")
 	{
@@ -1536,11 +1536,11 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 	}
 				if($table=="gedocumentos_egresos_consumo_t" && $field=="do_tipomov")
 	{
-		return 2;
+		return 3;
 	}
 				if($table=="gedocumentos_egresos_consumo_t" && $field=="doclasedoc")
 	{
-		return 310;
+		return 210;
 	}
 				if($table=="gedocumentos_egresos_consumo_t" && $field=="sys_user")
 	{

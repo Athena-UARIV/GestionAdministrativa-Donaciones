@@ -106,6 +106,15 @@ pdfDocument = {
 										{BEGIN col_grid_13}
 					"%",
 					{END col_grid_13}
+										{BEGIN col_grid_14}
+					"%",
+					{END col_grid_14}
+										{BEGIN col_grid_15}
+					"%",
+					{END col_grid_15}
+										{BEGIN col_grid_16}
+					"%",
+					{END col_grid_16}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -696,6 +705,93 @@ pdfDocument = {
       },
 
 {END cellblock_grid_headcell_field9}
+																							{BEGIN cellblock_grid_headcell_field10}
+{
+	cellId: 'headcell_field10',
+	col:0,
+	row:0,
+			fieldName: 'co_cuentacontable',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel gedocumentos_egresos_consumo_t co_cuentacontable }","hidden":"{$item_hide_grid_field_label3}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$co_cuentacontable_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field10}
+																							{BEGIN cellblock_grid_headcell_field12}
+{
+	cellId: 'headcell_field12',
+	col:0,
+	row:0,
+			fieldName: 'doccnit',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel gedocumentos_egresos_consumo_t doccnit }","hidden":"{$item_hide_grid_field_label4}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$doccnit_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field12}
+																							{BEGIN cellblock_grid_headcell_field13}
+{
+	cellId: 'headcell_field13',
+	col:0,
+	row:0,
+			fieldName: 'docnomproveedor',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel gedocumentos_egresos_consumo_t docnomproveedor }","hidden":"{$item_hide_grid_field_label5}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$docnomproveedor_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field13}
 											],
 				{END row_grid_0}
 		
@@ -1117,6 +1213,93 @@ pdfDocument = {
       },
 
 {END cellblock_grid_cell_field9}
+																							{BEGIN cellblock_grid_cell_field10}
+{
+	cellId: 'cell_field10',
+	col:0,
+	row:0,
+			fieldName: 'co_cuentacontable',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$co_cuentacontable_pdfvalue},"hidden":"{$item_hide_grid_field3}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$co_cuentacontable_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field10}
+																							{BEGIN cellblock_grid_cell_field12}
+{
+	cellId: 'cell_field12',
+	col:0,
+	row:0,
+			fieldName: 'doccnit',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$doccnit_pdfvalue},"hidden":"{$item_hide_grid_field4}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$doccnit_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field12}
+																							{BEGIN cellblock_grid_cell_field13}
+{
+	cellId: 'cell_field13',
+	col:0,
+	row:0,
+			fieldName: 'docnomproveedor',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$docnomproveedor_pdfvalue},"hidden":"{$item_hide_grid_field5}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$docnomproveedor_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field13}
 											],
 				{END row_grid_1}
 						{BEGIN row_grid_2}
@@ -1242,6 +1425,27 @@ pdfDocument = {
 				cellId: 'cell_dpreview',
 				row:  0,
 				col:  13,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  14,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  15,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  16,
 				text: '',
 				compensateColspan: true
 			},
@@ -1618,6 +1822,84 @@ pdfDocument = {
       },
 
 {END cellblock_grid_footcell_field9}
+																							{BEGIN cellblock_grid_footcell_field10}
+{
+	cellId: 'footcell_field10',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field10}
+																							{BEGIN cellblock_grid_footcell_field12}
+{
+	cellId: 'footcell_field12',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field12}
+																							{BEGIN cellblock_grid_footcell_field13}
+{
+	cellId: 'footcell_field13',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field13}
 											],
 				{END row_grid_3}
 		

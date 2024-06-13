@@ -3121,7 +3121,7 @@ $tdatagedocumentos_egresos_consumo_t[".hideMobileList"] = array();
 		
 	$edata["LinkField"] = "direc_territorial_id";
 	$edata["LinkFieldType"] = 3;
-	$edata["DisplayField"] = "direc_territorial_id";
+	$edata["DisplayField"] = "nombre_terr";
 
 	
 

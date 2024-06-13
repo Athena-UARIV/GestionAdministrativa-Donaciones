@@ -48,6 +48,7 @@ function DBLookup($sql)
 class tDAL
 {
 	var $tbldbusers_at_127_0_0_1__global_users;
+	var $tbldbusers_at_127_0_0_1__q_divipola;
 	var $tbldbrf_at_127_0_0_1__alasientos;
 	var $tbldbrf_at_127_0_0_1__alconceptos;
 	var $tbldbrf_at_127_0_0_1__alcuentasalma;
@@ -85,6 +86,7 @@ class tDAL
 	var $tbldbrf_at_127_0_0_1__q_ctrl_saldo_consumo_consulta;
 	var $tbldbrf_at_127_0_0_1__q_global_enservicio;
 	var $tbldbrf_at_127_0_0_1__q_lista_elementos_tyr_gestionados_group_00;
+	var $tbldbrf_at_127_0_0_1__tparam_direcc_territoriales;
 	var $tbldbrf_at_127_0_0_1__tparam_estadoasientos;
 	var $tbldbrf_at_127_0_0_1__tparam_sn;
 	var $tbldbrf_at_127_0_0_1__tparam_status;
@@ -102,6 +104,7 @@ class tDAL
 		if($this->lstTables)
 			return;
 		$this->lstTables[] = array("name" => "global_users", "varname" => "dbusers_at_127_0_0_1__global_users", "altvarname" => "global_users", "connId" => "dbusers_at_127_0_0_1", "schema" => "", "connName" => "dbusers at 127.0.0.1");
+		$this->lstTables[] = array("name" => "q_divipola", "varname" => "dbusers_at_127_0_0_1__q_divipola", "altvarname" => "q_divipola", "connId" => "dbusers_at_127_0_0_1", "schema" => "", "connName" => "dbusers at 127.0.0.1");
 		$this->lstTables[] = array("name" => "alasientos", "varname" => "dbrf_at_127_0_0_1__alasientos", "altvarname" => "alasientos", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "alconceptos", "varname" => "dbrf_at_127_0_0_1__alconceptos", "altvarname" => "alconceptos", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "alcuentasalma", "varname" => "dbrf_at_127_0_0_1__alcuentasalma", "altvarname" => "alcuentasalma", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
@@ -139,6 +142,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "q_ctrl_saldo_consumo_consulta", "varname" => "dbrf_at_127_0_0_1__q_ctrl_saldo_consumo_consulta", "altvarname" => "q_ctrl_saldo_consumo_consulta", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "q_global_enservicio", "varname" => "dbrf_at_127_0_0_1__q_global_enservicio", "altvarname" => "q_global_enservicio", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "q_lista_elementos_tyr_gestionados_group_00", "varname" => "dbrf_at_127_0_0_1__q_lista_elementos_tyr_gestionados_group_00", "altvarname" => "q_lista_elementos_tyr_gestionados_group_00", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
+		$this->lstTables[] = array("name" => "tparam_direcc_territoriales", "varname" => "dbrf_at_127_0_0_1__tparam_direcc_territoriales", "altvarname" => "tparam_direcc_territoriales", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "tparam_estadoasientos", "varname" => "dbrf_at_127_0_0_1__tparam_estadoasientos", "altvarname" => "tparam_estadoasientos", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "tparam_sn", "varname" => "dbrf_at_127_0_0_1__tparam_sn", "altvarname" => "tparam_sn", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "tparam_status", "varname" => "dbrf_at_127_0_0_1__tparam_status", "altvarname" => "tparam_status", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");

@@ -628,6 +628,14 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="tparam_direcc_territoriales")
+		{
+			return false;
+		}
+		if($table=="q_divipola")
+		{
+			return false;
+		}
 	}
 
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -1205,6 +1213,14 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="q_ctrl_saldo_consumo_consulta")
+		{
+			return false;
+		}
+		if($table=="tparam_direcc_territoriales")
+		{
+			return false;
+		}
+		if($table=="q_divipola")
 		{
 			return false;
 		}

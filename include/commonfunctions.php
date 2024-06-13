@@ -339,6 +339,10 @@ function checkTableName($shortTName )
 		return true;
 	if ("q_ctrl_saldo_consumo_consulta" == $shortTName )
 		return true;
+	if ("tparam_direcc_territoriales" == $shortTName )
+		return true;
+	if ("q_divipola" == $shortTName )
+		return true;
 	return false;
 }
 
@@ -1001,6 +1005,24 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="q_ctrl_saldo_consumo_consulta";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tparam_direcc_territoriales");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tparam_direcc_territoriales";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_divipola");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_divipola";
+	}
 	return $arr;
 }
 
@@ -1078,6 +1100,8 @@ function GetTablesListWithoutSecurity()
 	$arr[]="contractor_master";
 	$arr[]="contractor_type";
 	$arr[]="q_ctrl_saldo_consumo_consulta";
+	$arr[]="tparam_direcc_territoriales";
+	$arr[]="q_divipola";
 	return $arr;
 }
 
@@ -2035,6 +2059,16 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="q_ctrl_saldo_consumo_consulta" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tparam_direcc_territoriales" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_divipola" )
 	{
 //	default permissions
 		return "ADESPI".$extraPerm;

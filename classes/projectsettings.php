@@ -3714,6 +3714,10 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "contractor_type" ] = "contractor_type";
 	$projectEntities[ "q_ctrl_saldo_consumo_consulta" ] = array( "url" => "q_ctrl_saldo_consumo_consulta", "type" => 0 );
 	$projectEntitiesReverse[ "q_ctrl_saldo_consumo_consulta" ] = "q_ctrl_saldo_consumo_consulta";
+	$projectEntities[ "tparam_direcc_territoriales" ] = array( "url" => "tparam_direcc_territoriales", "type" => 0 );
+	$projectEntitiesReverse[ "tparam_direcc_territoriales" ] = "tparam_direcc_territoriales";
+	$projectEntities[ "q_divipola" ] = array( "url" => "q_divipola", "type" => 0 );
+	$projectEntitiesReverse[ "q_divipola" ] = "q_divipola";
 }
 
 function findTable( $table ) {

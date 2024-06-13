@@ -355,6 +355,7 @@ class DB
 		if( "dbusers_at_127_0_0_1" == $conn->connId )
 		{
 			$dalTables[$conn->connId][] = array("name" => "global_users", "varname" => "dbusers_at_127_0_0_1__global_users", "altvarname" => "global_users", "connId" => "dbusers_at_127_0_0_1", "schema" => "", "connName" => "dbusers at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "q_divipola", "varname" => "dbusers_at_127_0_0_1__q_divipola", "altvarname" => "q_divipola", "connId" => "dbusers_at_127_0_0_1", "schema" => "", "connName" => "dbusers at 127.0.0.1");
 		}
 		if( "dbrf_at_127_0_0_1" == $conn->connId )
 		{
@@ -395,6 +396,7 @@ class DB
 			$dalTables[$conn->connId][] = array("name" => "q_ctrl_saldo_consumo_consulta", "varname" => "dbrf_at_127_0_0_1__q_ctrl_saldo_consumo_consulta", "altvarname" => "q_ctrl_saldo_consumo_consulta", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 			$dalTables[$conn->connId][] = array("name" => "q_global_enservicio", "varname" => "dbrf_at_127_0_0_1__q_global_enservicio", "altvarname" => "q_global_enservicio", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 			$dalTables[$conn->connId][] = array("name" => "q_lista_elementos_tyr_gestionados_group_00", "varname" => "dbrf_at_127_0_0_1__q_lista_elementos_tyr_gestionados_group_00", "altvarname" => "q_lista_elementos_tyr_gestionados_group_00", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
+			$dalTables[$conn->connId][] = array("name" => "tparam_direcc_territoriales", "varname" => "dbrf_at_127_0_0_1__tparam_direcc_territoriales", "altvarname" => "tparam_direcc_territoriales", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 			$dalTables[$conn->connId][] = array("name" => "tparam_estadoasientos", "varname" => "dbrf_at_127_0_0_1__tparam_estadoasientos", "altvarname" => "tparam_estadoasientos", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 			$dalTables[$conn->connId][] = array("name" => "tparam_sn", "varname" => "dbrf_at_127_0_0_1__tparam_sn", "altvarname" => "tparam_sn", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 			$dalTables[$conn->connId][] = array("name" => "tparam_status", "varname" => "dbrf_at_127_0_0_1__tparam_status", "altvarname" => "tparam_status", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");

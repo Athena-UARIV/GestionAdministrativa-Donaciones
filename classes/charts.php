@@ -514,6 +514,10 @@ class Chart
 			return true;
 		if("q_ctrl_saldo_consumo_consulta" == $this->chrt_array['tables'][0])
 			return true;
+		if("tparam_direcc_territoriales" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_divipola" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 

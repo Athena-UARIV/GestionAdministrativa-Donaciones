@@ -760,9 +760,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "1072_1718244866";
+$projectBuildKey = "1073_1718244866";
 $wizardBuildKey = "41974";
-$projectBuildNumber = "1072";
+$projectBuildNumber = "1073";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -856,6 +856,8 @@ $tableCaptions["Spanish"]["cbs"] = "Cbs";
 $tableCaptions["Spanish"]["contractor_master"] = "Contractor Master";
 $tableCaptions["Spanish"]["contractor_type"] = "Contractor Type";
 $tableCaptions["Spanish"]["q_ctrl_saldo_consumo_consulta"] = "Salida de elementos";
+$tableCaptions["Spanish"]["tparam_direcc_territoriales"] = "Direcciones territoriales";
+$tableCaptions["Spanish"]["q_divipola"] = "DIVIPOLA";
 
 
 $globalEvents = new class_GlobalEvents;

@@ -82,11 +82,11 @@
 
 	$menuNodes[] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "21";
-	$menuNode["name"] = "Periodos";
+	$menuNode["id"] = "34";
+	$menuNode["name"] = "Clasificador de Bienes y Servicios";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "global_periodos";
+	$menuNode["table"] = "cbs";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
 	$menuNode["parent"] = "5";
@@ -102,7 +102,7 @@
 
 		$menuNode["color"] = "";
 
-	$menuNode["title"] = "Periodos";
+	$menuNode["title"] = "Clasificador de Bienes y Servicios";
 
 
 
@@ -160,6 +160,32 @@
 
 	$menuNodes[] = $menuNode;
 	$menuNode = array();
+	$menuNode["id"] = "36";
+	$menuNode["name"] = "Direcciones territoriales";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "tparam_direcc_territoriales";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "5";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = strtolower("List");//
+	$menuNode["pageId"] = "";
+	$menuNode["openType"] = "None";
+
+	$menuNode["icon"] = "fa-angle-double-right";
+	$menuNode["iconType"] = "3";
+	$menuNode["iconShow"] = "1";
+
+		$menuNode["color"] = "";
+
+	$menuNode["title"] = "Direcciones territoriales";
+
+
+
+	$menuNodes[] = $menuNode;
+	$menuNode = array();
 	$menuNode["id"] = "14";
 	$menuNode["name"] = "Marcas";
 	$menuNode["href"] = "mypage.htm";
@@ -181,32 +207,6 @@
 		$menuNode["color"] = "";
 
 	$menuNode["title"] = "Marcas";
-
-
-
-	$menuNodes[] = $menuNode;
-	$menuNode = array();
-	$menuNode["id"] = "20";
-	$menuNode["name"] = "Valores base para politica de materialidad";
-	$menuNode["href"] = "mypage.htm";
-	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "tparam_valor_uvt";
-	$menuNode["style"] = "";
-	$menuNode["params"] = "";
-	$menuNode["parent"] = "5";
-	$menuNode["nameType"] = "Text";
-	$menuNode["linkType"] = "Internal";
-	$menuNode["pageType"] = strtolower("List");//
-	$menuNode["pageId"] = "";
-	$menuNode["openType"] = "None";
-
-	$menuNode["icon"] = "fa-angle-double-right";
-	$menuNode["iconType"] = "3";
-	$menuNode["iconShow"] = "1";
-
-		$menuNode["color"] = "";
-
-	$menuNode["title"] = "Valores base para politica de materialidad";
 
 
 
@@ -238,11 +238,11 @@
 
 	$menuNodes[] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "34";
-	$menuNode["name"] = "Clasificador de Bienes y Servicios";
+	$menuNode["id"] = "21";
+	$menuNode["name"] = "Periodos";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "cbs";
+	$menuNode["table"] = "global_periodos";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
 	$menuNode["parent"] = "5";
@@ -258,7 +258,7 @@
 
 		$menuNode["color"] = "";
 
-	$menuNode["title"] = "Clasificador de Bienes y Servicios";
+	$menuNode["title"] = "Periodos";
 
 
 
@@ -285,6 +285,32 @@
 		$menuNode["color"] = "";
 
 	$menuNode["title"] = "proveedores";
+
+
+
+	$menuNodes[] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "20";
+	$menuNode["name"] = "Valores base para politica de materialidad";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "tparam_valor_uvt";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "5";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = strtolower("List");//
+	$menuNode["pageId"] = "";
+	$menuNode["openType"] = "None";
+
+	$menuNode["icon"] = "fa-angle-double-right";
+	$menuNode["iconType"] = "3";
+	$menuNode["iconShow"] = "1";
+
+		$menuNode["color"] = "";
+
+	$menuNode["title"] = "Valores base para politica de materialidad";
 
 
 
@@ -753,6 +779,32 @@
 		$menuNode["color"] = "";
 
 	$menuNode["title"] = "Dashboard";
+
+
+
+	$menuNodes[] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "37";
+	$menuNode["name"] = "";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "q_divipola";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "0";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = strtolower("List");//
+	$menuNode["pageId"] = "";
+	$menuNode["openType"] = "None";
+
+	$menuNode["icon"] = "glyphicon-shopping-cart";
+	$menuNode["iconType"] = "2";
+	$menuNode["iconShow"] = "2";
+
+		$menuNode["color"] = "";
+
+	$menuNode["title"] = "DIVIPOLA";
 
 
 

@@ -1139,6 +1139,13 @@ function InitLookupLinks()
 			$lookupTableLinks["inv_almacen"]["q_ctrl_saldo_consumo_consulta.mcdalmacen"] = array();
 		}
 		$lookupTableLinks["inv_almacen"]["q_ctrl_saldo_consumo_consulta.mcdalmacen"]["edit"] = array("table" => "q_ctrl_saldo_consumo_consulta", "field" => "mcdalmacen", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_divipola"] ) ) {
+			$lookupTableLinks["q_divipola"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_divipola"]["tparam_direcc_territoriales.ciudad_terr"] )) {
+			$lookupTableLinks["q_divipola"]["tparam_direcc_territoriales.ciudad_terr"] = array();
+		}
+		$lookupTableLinks["q_divipola"]["tparam_direcc_territoriales.ciudad_terr"]["edit"] = array("table" => "tparam_direcc_territoriales", "field" => "ciudad_terr", "page" => "edit");
 }
 
 ?>

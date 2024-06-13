@@ -760,9 +760,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "1071_1718244866";
+$projectBuildKey = "1072_1718244866";
 $wizardBuildKey = "41974";
-$projectBuildNumber = "1071";
+$projectBuildNumber = "1072";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -974,7 +974,7 @@ $fieldFilterValueShrinkPostfix = "...";
 
 
 // here goes EVENT_INIT_APP event
-// Genera TOKEN Radicado
+// Genera TOKEN Radicado.
 
 function generarToken() {
     $letra = chr(rand(65, 90)); // Genera una letra mayúscula aleatoria (código ASCII: 65-90)

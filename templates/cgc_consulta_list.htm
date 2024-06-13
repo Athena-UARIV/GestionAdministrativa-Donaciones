@@ -258,6 +258,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_CodigoContableN}</span>
 						</div>
 		{END searchCtrlBlock_CodigoContableN}
+																{BEGIN searchCtrlBlock_Imputable}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Imputable}" {$filterRow_attrs_Imputable}>
+			<label>{$label cgc_consulta Imputable }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Imputable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Imputable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Imputable}</span>
+						</div>
+		{END searchCtrlBlock_Imputable}
 																{BEGIN searchCtrlBlock_pos_9}
 
 
@@ -566,7 +579,10 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Descripcion"]:before {
 		content: "{$label cgc_consulta Descripcion}";
 	}
-		}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Imputable"]:before {
+		content: "{$label cgc_consulta Imputable}";
+	}
+	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
 	cellpadding="0"
@@ -669,7 +685,7 @@
 		{BEGIN CodigoContableN_fieldheadercolumn}
 	{BEGIN CodigoContableN_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CodigoContableN" data-fieldname="CodigoContableN" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CodigoContableN" data-fieldname="CodigoContableN" 
 
 			{$CodigoContableN_orderlinkattrs}
 	
@@ -703,7 +719,7 @@
 		{BEGIN Descripcion_fieldheadercolumn}
 	{BEGIN Descripcion_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" 
 
 			{$Descripcion_orderlinkattrs}
 	
@@ -720,6 +736,40 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Imputable_class}	"
+
+			data-field="Imputable"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Imputable_fieldheadercolumn}
+	{BEGIN Imputable_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Imputable" data-fieldname="Imputable" 
+
+			{$Imputable_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label cgc_consulta Imputable }</span>
+					{$arrow_icon_Imputable}
+			</span>
+	</span>
+	{END Imputable_fieldheader}
+{END Imputable_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
 							</tr>
 															
 					{END grid_header}
@@ -845,6 +895,27 @@
 {END Descripcion_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Imputable_class}	"
+
+			data-field="Imputable"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Imputable_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Imputable" data-fieldname="Imputable" data-default-width >
+{$Imputable_value}
+</span>
+{END Imputable_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
 							</tr>
 										
 											{END grid_row}
@@ -931,6 +1002,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field2}
+									{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Imputable_class}	"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="cgc_consulta_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
 							</tr>
 					
 					</tfoot>

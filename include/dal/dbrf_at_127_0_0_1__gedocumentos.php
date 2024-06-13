@@ -1,6 +1,7 @@
 <?php
 $dalTablegedocumentos = array();
 $dalTablegedocumentos["as_nroasiento_fk"] = array("type"=>3,"varname"=>"as_nroasiento_fk", "name" => "as_nroasiento_fk", "autoInc" => "0");
+$dalTablegedocumentos["co_cuentacontable"] = array("type"=>200,"varname"=>"co_cuentacontable", "name" => "co_cuentacontable", "autoInc" => "0");
 $dalTablegedocumentos["do_concepto"] = array("type"=>3,"varname"=>"do_concepto", "name" => "do_concepto", "autoInc" => "0");
 $dalTablegedocumentos["do_dep"] = array("type"=>3,"varname"=>"do_dep", "name" => "do_dep", "autoInc" => "0");
 $dalTablegedocumentos["do_depsup"] = array("type"=>3,"varname"=>"do_depsup", "name" => "do_depsup", "autoInc" => "0");

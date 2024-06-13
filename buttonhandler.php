@@ -374,8 +374,7 @@ function buttonHandler_BtnRefresh($params)
 	}
 
 	RunnerContext::push( new RunnerContextItem( $params["location"], $contextParams));
-	
-;
+	;
 	RunnerContext::pop();
 	echo my_json_encode($result);
 	$button->deleteTempFiles();

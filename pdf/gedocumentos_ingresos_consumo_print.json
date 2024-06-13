@@ -97,6 +97,9 @@ pdfDocument = {
 										{BEGIN col_grid_10}
 					"%",
 					{END col_grid_10}
+										{BEGIN col_grid_11}
+					"%",
+					{END col_grid_11}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -577,6 +580,35 @@ pdfDocument = {
       },
 
 {END cellblock_grid_headcell_field10}
+																							{BEGIN cellblock_grid_headcell_field11}
+{
+	cellId: 'headcell_field11',
+	col:0,
+	row:0,
+			fieldName: 'co_cuentacontable',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel gedocumentos_ingresos_consumo co_cuentacontable }","hidden":"{$item_hide_grid_field_label2}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$co_cuentacontable_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field11}
 											],
 				{END row_grid_0}
 		
@@ -905,6 +937,35 @@ pdfDocument = {
       },
 
 {END cellblock_grid_cell_field10}
+																							{BEGIN cellblock_grid_cell_field11}
+{
+	cellId: 'cell_field11',
+	col:0,
+	row:0,
+			fieldName: 'co_cuentacontable',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$co_cuentacontable_pdfvalue},"hidden":"{$item_hide_grid_field2}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$co_cuentacontable_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field11}
 											],
 				{END row_grid_1}
 		
@@ -1200,6 +1261,32 @@ pdfDocument = {
       },
 
 {END cellblock_grid_footcell_field10}
+																							{BEGIN cellblock_grid_footcell_field11}
+{
+	cellId: 'footcell_field11',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field11}
 											],
 				{END row_grid_2}
 		

@@ -258,6 +258,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_co_tipomovto}</span>
 						</div>
 		{END searchCtrlBlock_co_tipomovto}
+																{BEGIN searchCtrlBlock_co_cuentacontable}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_co_cuentacontable}" {$filterRow_attrs_co_cuentacontable}>
+			<label>{$label alconceptos co_cuentacontable }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_co_cuentacontable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_co_cuentacontable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_co_cuentacontable}</span>
+						</div>
+		{END searchCtrlBlock_co_cuentacontable}
 																{BEGIN searchCtrlBlock_co_otronomconcepto}
 
 
@@ -743,6 +756,9 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="co_tipomovto"]:before {
 		content: "{$label alconceptos co_tipomovto}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="co_cuentacontable"]:before {
+		content: "{$label alconceptos co_cuentacontable}";
+	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
@@ -931,6 +947,40 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$co_cuentacontable_class}	"
+
+			data-field="co_cuentacontable"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN co_cuentacontable_fieldheadercolumn}
+	{BEGIN co_cuentacontable_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_cuentacontable" data-fieldname="co_cuentacontable" 
+
+			{$co_cuentacontable_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label alconceptos co_cuentacontable }</span>
+					{$arrow_icon_co_cuentacontable}
+			</span>
+	</span>
+	{END co_cuentacontable_fieldheader}
+{END co_cuentacontable_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
 							</tr>
 															
 					{END grid_header}
@@ -1088,6 +1138,27 @@
 {END co_ctrl_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$co_cuentacontable_class}	"
+
+			data-field="co_cuentacontable"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN co_cuentacontable_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_cuentacontable" data-fieldname="co_cuentacontable" data-default-width >
+{$co_cuentacontable_value}
+</span>
+{END co_cuentacontable_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
 							</tr>
 										
 											{END grid_row}
@@ -1189,6 +1260,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field3}
+									{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$co_cuentacontable_class}	"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="alconceptos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
 							</tr>
 					
 					</tfoot>

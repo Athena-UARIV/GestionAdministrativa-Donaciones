@@ -3755,6 +3755,7 @@ $proto47["m_strName"] = "gedocumentos";
 $proto47["m_srcTableName"] = "gedocumentos_egresos";
 $proto47["m_columns"] = array();
 $proto47["m_columns"][] = "as_nroasiento_fk";
+$proto47["m_columns"][] = "co_cuentacontable";
 $proto47["m_columns"][] = "do_concepto";
 $proto47["m_columns"][] = "do_dep";
 $proto47["m_columns"][] = "do_depsup";

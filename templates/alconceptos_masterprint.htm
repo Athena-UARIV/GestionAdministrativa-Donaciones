@@ -61,7 +61,7 @@
 	 
 		{BEGIN cod_concepto_id_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cod_concepto_id" data-fieldname="cod_concepto_id" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cod_concepto_id" data-fieldname="cod_concepto_id" 
 
 	
 	
@@ -91,7 +91,7 @@
 	 
 		{BEGIN co_codconcepto_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_codconcepto" data-fieldname="co_codconcepto" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_codconcepto" data-fieldname="co_codconcepto" 
 
 	
 	
@@ -121,7 +121,7 @@
 	 
 		{BEGIN co_nomconcepto_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_nomconcepto" data-fieldname="co_nomconcepto" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_nomconcepto" data-fieldname="co_nomconcepto" 
 
 	
 	
@@ -151,7 +151,7 @@
 	 
 		{BEGIN co_otronomconcepto_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_otronomconcepto" data-fieldname="co_otronomconcepto" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_otronomconcepto" data-fieldname="co_otronomconcepto" 
 
 	
 	
@@ -181,7 +181,7 @@
 	 
 		{BEGIN co_ctrl_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_ctrl" data-fieldname="co_ctrl" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_ctrl" data-fieldname="co_ctrl" 
 
 	
 	
@@ -211,7 +211,7 @@
 	 
 		{BEGIN co_tipomovto_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_tipomovto" data-fieldname="co_tipomovto" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_tipomovto" data-fieldname="co_tipomovto" 
 
 	
 	
@@ -225,6 +225,36 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field5}
+									{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$co_cuentacontable_class}	"
+
+			data-field="co_cuentacontable"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN co_cuentacontable_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_cuentacontable" data-fieldname="co_cuentacontable" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label alconceptos co_cuentacontable }</span>
+			</span>
+	</span>
+{END co_cuentacontable_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
 							</tr>
 															
 					{END grid_header}
@@ -362,6 +392,27 @@
 {END co_tipomovto_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field5}
+									{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$co_cuentacontable_class}	"
+
+			data-field="co_cuentacontable"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN co_cuentacontable_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_cuentacontable" data-fieldname="co_cuentacontable" data-default-width >
+{$co_cuentacontable_value}
+</span>
+{END co_cuentacontable_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
 							</tr>
 										
 											{END grid_row}
@@ -463,6 +514,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field5}
+									{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$co_cuentacontable_class}	"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="alconceptos_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
 							</tr>
 					
 					</tfoot>

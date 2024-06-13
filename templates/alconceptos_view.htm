@@ -248,7 +248,6 @@
 	{$cell_grid_c3}
 	class=" r-ori-vert"
 	
-			data-single
 			
 	ocolspan="2"		data-cellId="grid_c3" data-pageid="{$pageid}"
 		data-v-cell="4"
@@ -276,6 +275,27 @@
 
 
 {END co_otronomconcepto_fieldblock}
+											
+{BEGIN co_cuentacontable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_co_cuentacontable}  r-vertical-field" data-fieldname="co_cuentacontable" data-signal-error-for="co_cuentacontable{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="co_cuentacontable" data-fieldname="co_cuentacontable" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_co_cuentacontable}">
+		
+		{BEGIN co_cuentacontable_label}{$label alconceptos co_cuentacontable }{END co_cuentacontable_label}
+	</label>
+	<div class="" >
+		{$co_cuentacontable_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END co_cuentacontable_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

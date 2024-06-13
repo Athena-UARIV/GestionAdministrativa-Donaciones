@@ -40,6 +40,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscgc_consulta["Spanish"]["Descripcion"] = "Descripcion";
 	$fieldToolTipscgc_consulta["Spanish"]["Descripcion"] = "";
 	$placeHolderscgc_consulta["Spanish"]["Descripcion"] = "";
+	$fieldLabelscgc_consulta["Spanish"]["Imputable"] = "Imputable";
+	$fieldToolTipscgc_consulta["Spanish"]["Imputable"] = "";
+	$placeHolderscgc_consulta["Spanish"]["Imputable"] = "";
 	if (count($fieldToolTipscgc_consulta["Spanish"]))
 		$tdatacgc_consulta[".isUseToolTips"] = true;
 }
@@ -162,6 +165,7 @@ $tdatacgc_consulta[".googleLikeFields"][] = "CodigoContable";
 $tdatacgc_consulta[".googleLikeFields"][] = "CodigoContableN";
 $tdatacgc_consulta[".googleLikeFields"][] = "Descripcion";
 $tdatacgc_consulta[".googleLikeFields"][] = "pos_9";
+$tdatacgc_consulta[".googleLikeFields"][] = "Imputable";
 
 
 
@@ -195,9 +199,9 @@ $tdatacgc_consulta[".strOrderBy"] = $tstrOrderBy;
 $tdatacgc_consulta[".orderindexes"] = array();
 
 
-$tdatacgc_consulta[".sqlHead"] = "SELECT cgc_di,  CodigoContable,  pos_9num AS CodigoContableN,  CONCAT_WS(' ->', CodigoContable, Descripcion_9) AS Descripcion,  pos_9";
+$tdatacgc_consulta[".sqlHead"] = "SELECT cgc_di,  CodigoContable,  pos_9num AS CodigoContableN,  CONCAT_WS(' ->', CodigoContable, Descripcion_9) AS Descripcion,  pos_9,  Imputable";
 $tdatacgc_consulta[".sqlFrom"] = "FROM cgc_6";
-$tdatacgc_consulta[".sqlWhereExpr"] = "(pos_9 is not null)";
+$tdatacgc_consulta[".sqlWhereExpr"] = "(pos_9 is not null) AND (Imputable = 'SI')";
 $tdatacgc_consulta[".sqlTail"] = "";
 
 
@@ -940,6 +944,145 @@ $tdatacgc_consulta[".hideMobileList"] = array();
 
 	$tdatacgc_consulta["pos_9"] = $fdata;
 		$tdatacgc_consulta[".searchableFields"][] = "pos_9";
+//	Imputable
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 6;
+	$fdata["strName"] = "Imputable";
+	$fdata["GoodName"] = "Imputable";
+	$fdata["ownerTable"] = "cgc_6";
+	$fdata["Label"] = GetFieldLabel("cgc_consulta","Imputable");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "Imputable";
+
+		$fdata["sourceSingle"] = "Imputable";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Imputable";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatacgc_consulta["Imputable"] = $fdata;
+		$tdatacgc_consulta[".searchableFields"][] = "Imputable";
 
 
 $tables_data["cgc_consulta"]=&$tdatacgc_consulta;
@@ -984,182 +1127,230 @@ function createSqlQuery_cgc_consulta()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "cgc_di,  CodigoContable,  pos_9num AS CodigoContableN,  CONCAT_WS(' ->', CodigoContable, Descripcion_9) AS Descripcion,  pos_9";
+$proto0["m_strFieldList"] = "cgc_di,  CodigoContable,  pos_9num AS CodigoContableN,  CONCAT_WS(' ->', CodigoContable, Descripcion_9) AS Descripcion,  pos_9,  Imputable";
 $proto0["m_strFrom"] = "FROM cgc_6";
-$proto0["m_strWhere"] = "(pos_9 is not null)";
+$proto0["m_strWhere"] = "(pos_9 is not null) AND (Imputable = 'SI')";
 $proto0["m_strOrderBy"] = "";
 	
 								;
 			$proto0["cipherer"] = null;
 $proto2=array();
-$proto2["m_sql"] = "pos_9 is not null";
-$proto2["m_uniontype"] = "SQLL_UNKNOWN";
+$proto2["m_sql"] = "(pos_9 is not null) AND (Imputable = 'SI')";
+$proto2["m_uniontype"] = "SQLL_AND";
+	$obj = new SQLNonParsed(array(
+	"m_sql" => "(pos_9 is not null) AND (Imputable = 'SI')"
+));
+
+$proto2["m_column"]=$obj;
+$proto2["m_contained"] = array();
+						$proto4=array();
+$proto4["m_sql"] = "pos_9 is not null";
+$proto4["m_uniontype"] = "SQLL_UNKNOWN";
 						$obj = new SQLField(array(
 	"m_strName" => "pos_9",
 	"m_strTable" => "cgc_6",
 	"m_srcTableName" => "cgc_consulta"
 ));
 
-$proto2["m_column"]=$obj;
-$proto2["m_contained"] = array();
-$proto2["m_strCase"] = "is not null";
+$proto4["m_column"]=$obj;
+$proto4["m_contained"] = array();
+$proto4["m_strCase"] = "is not null";
+$proto4["m_havingmode"] = false;
+$proto4["m_inBrackets"] = true;
+$proto4["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto4);
+
+			$proto2["m_contained"][]=$obj;
+						$proto6=array();
+$proto6["m_sql"] = "Imputable = 'SI'";
+$proto6["m_uniontype"] = "SQLL_UNKNOWN";
+						$obj = new SQLField(array(
+	"m_strName" => "Imputable",
+	"m_strTable" => "cgc_6",
+	"m_srcTableName" => "cgc_consulta"
+));
+
+$proto6["m_column"]=$obj;
+$proto6["m_contained"] = array();
+$proto6["m_strCase"] = "= 'SI'";
+$proto6["m_havingmode"] = false;
+$proto6["m_inBrackets"] = true;
+$proto6["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto6);
+
+			$proto2["m_contained"][]=$obj;
+$proto2["m_strCase"] = "";
 $proto2["m_havingmode"] = false;
 $proto2["m_inBrackets"] = false;
 $proto2["m_useAlias"] = false;
 $obj = new SQLLogicalExpr($proto2);
 
 $proto0["m_where"] = $obj;
-$proto4=array();
-$proto4["m_sql"] = "";
-$proto4["m_uniontype"] = "SQLL_UNKNOWN";
+$proto8=array();
+$proto8["m_sql"] = "";
+$proto8["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto4["m_column"]=$obj;
-$proto4["m_contained"] = array();
-$proto4["m_strCase"] = "";
-$proto4["m_havingmode"] = false;
-$proto4["m_inBrackets"] = false;
-$proto4["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto4);
+$proto8["m_column"]=$obj;
+$proto8["m_contained"] = array();
+$proto8["m_strCase"] = "";
+$proto8["m_havingmode"] = false;
+$proto8["m_inBrackets"] = false;
+$proto8["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto8);
 
 $proto0["m_having"] = $obj;
 $proto0["m_fieldlist"] = array();
-						$proto6=array();
+						$proto10=array();
 			$obj = new SQLField(array(
 	"m_strName" => "cgc_di",
 	"m_strTable" => "cgc_6",
 	"m_srcTableName" => "cgc_consulta"
 ));
 
-$proto6["m_sql"] = "cgc_di";
-$proto6["m_srcTableName"] = "cgc_consulta";
-$proto6["m_expr"]=$obj;
-$proto6["m_alias"] = "";
-$obj = new SQLFieldListItem($proto6);
+$proto10["m_sql"] = "cgc_di";
+$proto10["m_srcTableName"] = "cgc_consulta";
+$proto10["m_expr"]=$obj;
+$proto10["m_alias"] = "";
+$obj = new SQLFieldListItem($proto10);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto8=array();
+						$proto12=array();
 			$obj = new SQLField(array(
 	"m_strName" => "CodigoContable",
 	"m_strTable" => "cgc_6",
 	"m_srcTableName" => "cgc_consulta"
 ));
 
-$proto8["m_sql"] = "CodigoContable";
-$proto8["m_srcTableName"] = "cgc_consulta";
-$proto8["m_expr"]=$obj;
-$proto8["m_alias"] = "";
-$obj = new SQLFieldListItem($proto8);
+$proto12["m_sql"] = "CodigoContable";
+$proto12["m_srcTableName"] = "cgc_consulta";
+$proto12["m_expr"]=$obj;
+$proto12["m_alias"] = "";
+$obj = new SQLFieldListItem($proto12);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto10=array();
+						$proto14=array();
 			$obj = new SQLField(array(
 	"m_strName" => "pos_9num",
 	"m_strTable" => "cgc_6",
 	"m_srcTableName" => "cgc_consulta"
 ));
 
-$proto10["m_sql"] = "pos_9num";
-$proto10["m_srcTableName"] = "cgc_consulta";
-$proto10["m_expr"]=$obj;
-$proto10["m_alias"] = "CodigoContableN";
-$obj = new SQLFieldListItem($proto10);
+$proto14["m_sql"] = "pos_9num";
+$proto14["m_srcTableName"] = "cgc_consulta";
+$proto14["m_expr"]=$obj;
+$proto14["m_alias"] = "CodigoContableN";
+$obj = new SQLFieldListItem($proto14);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto12=array();
-			$proto13=array();
-$proto13["m_functiontype"] = "SQLF_CUSTOM";
-$proto13["m_arguments"] = array();
+						$proto16=array();
+			$proto17=array();
+$proto17["m_functiontype"] = "SQLF_CUSTOM";
+$proto17["m_arguments"] = array();
 						$obj = new SQLNonParsed(array(
 	"m_sql" => "' ->'"
 ));
 
-$proto13["m_arguments"][]=$obj;
+$proto17["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
 	"m_sql" => "CodigoContable"
 ));
 
-$proto13["m_arguments"][]=$obj;
+$proto17["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
 	"m_sql" => "Descripcion_9"
 ));
 
-$proto13["m_arguments"][]=$obj;
-$proto13["m_strFunctionName"] = "CONCAT_WS";
-$obj = new SQLFunctionCall($proto13);
+$proto17["m_arguments"][]=$obj;
+$proto17["m_strFunctionName"] = "CONCAT_WS";
+$obj = new SQLFunctionCall($proto17);
 
-$proto12["m_sql"] = "CONCAT_WS(' ->', CodigoContable, Descripcion_9)";
-$proto12["m_srcTableName"] = "cgc_consulta";
-$proto12["m_expr"]=$obj;
-$proto12["m_alias"] = "Descripcion";
-$obj = new SQLFieldListItem($proto12);
+$proto16["m_sql"] = "CONCAT_WS(' ->', CodigoContable, Descripcion_9)";
+$proto16["m_srcTableName"] = "cgc_consulta";
+$proto16["m_expr"]=$obj;
+$proto16["m_alias"] = "Descripcion";
+$obj = new SQLFieldListItem($proto16);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto17=array();
+						$proto21=array();
 			$obj = new SQLField(array(
 	"m_strName" => "pos_9",
 	"m_strTable" => "cgc_6",
 	"m_srcTableName" => "cgc_consulta"
 ));
 
-$proto17["m_sql"] = "pos_9";
-$proto17["m_srcTableName"] = "cgc_consulta";
-$proto17["m_expr"]=$obj;
-$proto17["m_alias"] = "";
-$obj = new SQLFieldListItem($proto17);
+$proto21["m_sql"] = "pos_9";
+$proto21["m_srcTableName"] = "cgc_consulta";
+$proto21["m_expr"]=$obj;
+$proto21["m_alias"] = "";
+$obj = new SQLFieldListItem($proto21);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto23=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Imputable",
+	"m_strTable" => "cgc_6",
+	"m_srcTableName" => "cgc_consulta"
+));
+
+$proto23["m_sql"] = "Imputable";
+$proto23["m_srcTableName"] = "cgc_consulta";
+$proto23["m_expr"]=$obj;
+$proto23["m_alias"] = "";
+$obj = new SQLFieldListItem($proto23);
 
 $proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto19=array();
-$proto19["m_link"] = "SQLL_MAIN";
-			$proto20=array();
-$proto20["m_strName"] = "cgc_6";
-$proto20["m_srcTableName"] = "cgc_consulta";
-$proto20["m_columns"] = array();
-$proto20["m_columns"][] = "AplBanco";
-$proto20["m_columns"][] = "cgc_di";
-$proto20["m_columns"][] = "Clasifica";
-$proto20["m_columns"][] = "CodigoContable";
-$proto20["m_columns"][] = "CodigoEntidad";
-$proto20["m_columns"][] = "Descripcion_9";
-$proto20["m_columns"][] = "EntidadContablePublica";
-$proto20["m_columns"][] = "Imputable";
-$proto20["m_columns"][] = "Manual";
-$proto20["m_columns"][] = "Naturaleza";
-$proto20["m_columns"][] = "pos_1";
-$proto20["m_columns"][] = "pos_2";
-$proto20["m_columns"][] = "pos_4";
-$proto20["m_columns"][] = "pos_6";
-$proto20["m_columns"][] = "pos_9";
-$proto20["m_columns"][] = "pos_9num";
-$proto20["m_columns"][] = "Reciproca";
-$proto20["m_columns"][] = "Saldo";
-$proto20["m_columns"][] = "Vigente";
-$obj = new SQLTable($proto20);
+												$proto25=array();
+$proto25["m_link"] = "SQLL_MAIN";
+			$proto26=array();
+$proto26["m_strName"] = "cgc_6";
+$proto26["m_srcTableName"] = "cgc_consulta";
+$proto26["m_columns"] = array();
+$proto26["m_columns"][] = "AplBanco";
+$proto26["m_columns"][] = "cgc_di";
+$proto26["m_columns"][] = "Clasifica";
+$proto26["m_columns"][] = "CodigoContable";
+$proto26["m_columns"][] = "CodigoEntidad";
+$proto26["m_columns"][] = "Descripcion_9";
+$proto26["m_columns"][] = "EntidadContablePublica";
+$proto26["m_columns"][] = "Imputable";
+$proto26["m_columns"][] = "Manual";
+$proto26["m_columns"][] = "Naturaleza";
+$proto26["m_columns"][] = "pos_1";
+$proto26["m_columns"][] = "pos_2";
+$proto26["m_columns"][] = "pos_4";
+$proto26["m_columns"][] = "pos_6";
+$proto26["m_columns"][] = "pos_9";
+$proto26["m_columns"][] = "pos_9num";
+$proto26["m_columns"][] = "Reciproca";
+$proto26["m_columns"][] = "Saldo";
+$proto26["m_columns"][] = "Vigente";
+$obj = new SQLTable($proto26);
 
-$proto19["m_table"] = $obj;
-$proto19["m_sql"] = "cgc_6";
-$proto19["m_alias"] = "";
-$proto19["m_srcTableName"] = "cgc_consulta";
-$proto21=array();
-$proto21["m_sql"] = "";
-$proto21["m_uniontype"] = "SQLL_UNKNOWN";
+$proto25["m_table"] = $obj;
+$proto25["m_sql"] = "cgc_6";
+$proto25["m_alias"] = "";
+$proto25["m_srcTableName"] = "cgc_consulta";
+$proto27=array();
+$proto27["m_sql"] = "";
+$proto27["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto21["m_column"]=$obj;
-$proto21["m_contained"] = array();
-$proto21["m_strCase"] = "";
-$proto21["m_havingmode"] = false;
-$proto21["m_inBrackets"] = false;
-$proto21["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto21);
+$proto27["m_column"]=$obj;
+$proto27["m_contained"] = array();
+$proto27["m_strCase"] = "";
+$proto27["m_havingmode"] = false;
+$proto27["m_inBrackets"] = false;
+$proto27["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto27);
 
-$proto19["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto19);
+$proto25["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto25);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1175,7 +1366,7 @@ $queryData_cgc_consulta = createSqlQuery_cgc_consulta();
 	
 								;
 
-					
+						
 
 $tdatacgc_consulta[".sqlquery"] = $queryData_cgc_consulta;
 

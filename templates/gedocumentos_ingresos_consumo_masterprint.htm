@@ -85,7 +85,7 @@
 	 
 		{BEGIN resolnum_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolnum" data-fieldname="resolnum" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolnum" data-fieldname="resolnum" 
 
 	
 	
@@ -145,7 +145,7 @@
 	 
 		{BEGIN do_detalle_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_detalle" data-fieldname="do_detalle" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_detalle" data-fieldname="do_detalle" 
 
 	
 	
@@ -175,7 +175,7 @@
 	 
 		{BEGIN do_nrodoc_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_nrodoc" data-fieldname="do_nrodoc" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_nrodoc" data-fieldname="do_nrodoc" 
 
 	
 	
@@ -205,7 +205,7 @@
 	 
 		{BEGIN do_fechadoc_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_fechadoc" data-fieldname="do_fechadoc" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_fechadoc" data-fieldname="do_fechadoc" 
 
 	
 	
@@ -309,6 +309,36 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field7}
+									{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$co_cuentacontable_class}	"
+
+			data-field="co_cuentacontable"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN co_cuentacontable_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_cuentacontable" data-fieldname="co_cuentacontable" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label gedocumentos_ingresos_consumo co_cuentacontable }</span>
+			</span>
+	</span>
+{END co_cuentacontable_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
 							</tr>
 															
 					{END grid_header}
@@ -513,6 +543,27 @@
 {END do_concepto_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field7}
+									{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$co_cuentacontable_class}	"
+
+			data-field="co_cuentacontable"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN co_cuentacontable_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="co_cuentacontable" data-fieldname="co_cuentacontable" data-default-width >
+{$co_cuentacontable_value}
+</span>
+{END co_cuentacontable_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
 							</tr>
 										
 											{END grid_row}
@@ -659,6 +710,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field7}
+									{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$co_cuentacontable_class}	"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
 							</tr>
 					
 					</tfoot>

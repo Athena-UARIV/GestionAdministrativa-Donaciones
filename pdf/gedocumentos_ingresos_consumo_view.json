@@ -693,6 +693,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel gedocumentos_ingresos_consumo do_file }","bold":true},{"text":{$do_file_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel gedocumentos_ingresos_consumo co_cuentacontable }","bold":true},{"text":{$co_cuentacontable_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

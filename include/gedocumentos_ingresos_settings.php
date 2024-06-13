@@ -3604,6 +3604,7 @@ $proto45["m_strName"] = "gedocumentos";
 $proto45["m_srcTableName"] = "gedocumentos_ingresos";
 $proto45["m_columns"] = array();
 $proto45["m_columns"][] = "as_nroasiento_fk";
+$proto45["m_columns"][] = "co_cuentacontable";
 $proto45["m_columns"][] = "do_concepto";
 $proto45["m_columns"][] = "do_dep";
 $proto45["m_columns"][] = "do_depsup";

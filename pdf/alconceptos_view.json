@@ -301,6 +301,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel alconceptos co_otronomconcepto }","bold":true},{"text":{$co_otronomconcepto_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel alconceptos co_cuentacontable }","bold":true},{"text":{$co_cuentacontable_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

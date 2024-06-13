@@ -4081,6 +4081,7 @@ $proto51["m_strName"] = "gedocumentos";
 $proto51["m_srcTableName"] = "gedocumentos_egresos_consumo";
 $proto51["m_columns"] = array();
 $proto51["m_columns"][] = "as_nroasiento_fk";
+$proto51["m_columns"][] = "co_cuentacontable";
 $proto51["m_columns"][] = "do_concepto";
 $proto51["m_columns"][] = "do_dep";
 $proto51["m_columns"][] = "do_depsup";

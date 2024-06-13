@@ -88,6 +88,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["resolnum"] = "Número de resolución";
 	$fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]["resolnum"] = "";
 	$placeHoldersgedocumentos_ingresos_consumo["Spanish"]["resolnum"] = "";
+	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["co_cuentacontable"] = "Cuenta contable";
+	$fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]["co_cuentacontable"] = "";
+	$placeHoldersgedocumentos_ingresos_consumo["Spanish"]["co_cuentacontable"] = "";
 	$pageTitlesgedocumentos_ingresos_consumo["Spanish"]["add"] = "Nuevo documento";
 	$pageTitlesgedocumentos_ingresos_consumo["Spanish"]["view"] = "<h3><strong style=\"color: rgb(107, 36, 178);\">Ingresos de consumo {%doclasedoc_id}</strong></h3>";
 	$pageTitlesgedocumentos_ingresos_consumo["Spanish"]["masterprint"] = "Ingreso {%doclasedoc_id}";
@@ -229,6 +232,7 @@ $tdatagedocumentos_ingresos_consumo[".googleLikeFields"][] = "do_dep";
 $tdatagedocumentos_ingresos_consumo[".googleLikeFields"][] = "do_depsup";
 $tdatagedocumentos_ingresos_consumo[".googleLikeFields"][] = "resolfecha";
 $tdatagedocumentos_ingresos_consumo[".googleLikeFields"][] = "resolnum";
+$tdatagedocumentos_ingresos_consumo[".googleLikeFields"][] = "co_cuentacontable";
 
 
 
@@ -263,7 +267,7 @@ $tdatagedocumentos_ingresos_consumo[".orderindexes"] = array();
 			$tdatagedocumentos_ingresos_consumo[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "doclasedoc_id");
 
 
-$tdatagedocumentos_ingresos_consumo[".sqlHead"] = "SELECT doclasedoc_id,  as_nroasiento_fk,  docodregion,  do_detalle,  do_fechadoc,  do_file,  do_legaliza,  do_nrodoc,  do_tipodoc,  do_tipomov,  doccnit,  doclasedoc,  docnomproveedor,  egreso,  sys_fecha,  sys_user,  do_concepto,  do_dep,  do_depsup,  resolfecha,  resolnum";
+$tdatagedocumentos_ingresos_consumo[".sqlHead"] = "SELECT doclasedoc_id,  as_nroasiento_fk,  docodregion,  do_detalle,  do_fechadoc,  do_file,  do_legaliza,  do_nrodoc,  do_tipodoc,  do_tipomov,  doccnit,  doclasedoc,  docnomproveedor,  egreso,  sys_fecha,  sys_user,  do_concepto,  do_dep,  do_depsup,  resolfecha,  resolnum,  co_cuentacontable";
 $tdatagedocumentos_ingresos_consumo[".sqlFrom"] = "FROM gedocumentos";
 $tdatagedocumentos_ingresos_consumo[".sqlWhereExpr"] = "(doclasedoc = 311)";
 $tdatagedocumentos_ingresos_consumo[".sqlTail"] = "";
@@ -2795,7 +2799,8 @@ $tdatagedocumentos_ingresos_consumo[".hideMobileList"] = array();
 	$edata["LookupTable"] = "alconceptos";
 			$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
+		$edata["autoCompleteFields"][] = array('masterF'=>"co_cuentacontable", 'lookupF'=>"co_cuentacontable");
+	$edata["LCType"] = 0;
 
 	
 		
@@ -3509,6 +3514,142 @@ $tdatagedocumentos_ingresos_consumo[".hideMobileList"] = array();
 
 	$tdatagedocumentos_ingresos_consumo["resolnum"] = $fdata;
 		$tdatagedocumentos_ingresos_consumo[".searchableFields"][] = "resolnum";
+//	co_cuentacontable
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 22;
+	$fdata["strName"] = "co_cuentacontable";
+	$fdata["GoodName"] = "co_cuentacontable";
+	$fdata["ownerTable"] = "gedocumentos";
+	$fdata["Label"] = GetFieldLabel("gedocumentos_ingresos_consumo","co_cuentacontable");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "co_cuentacontable";
+
+		$fdata["sourceSingle"] = "co_cuentacontable";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "co_cuentacontable";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatagedocumentos_ingresos_consumo["co_cuentacontable"] = $fdata;
+		$tdatagedocumentos_ingresos_consumo[".searchableFields"][] = "co_cuentacontable";
 
 
 $tables_data["gedocumentos_ingresos_consumo"]=&$tdatagedocumentos_ingresos_consumo;
@@ -3613,7 +3754,7 @@ function createSqlQuery_gedocumentos_ingresos_consumo()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "doclasedoc_id,  as_nroasiento_fk,  docodregion,  do_detalle,  do_fechadoc,  do_file,  do_legaliza,  do_nrodoc,  do_tipodoc,  do_tipomov,  doccnit,  doclasedoc,  docnomproveedor,  egreso,  sys_fecha,  sys_user,  do_concepto,  do_dep,  do_depsup,  resolfecha,  resolnum";
+$proto0["m_strFieldList"] = "doclasedoc_id,  as_nroasiento_fk,  docodregion,  do_detalle,  do_fechadoc,  do_file,  do_legaliza,  do_nrodoc,  do_tipodoc,  do_tipomov,  doccnit,  doclasedoc,  docnomproveedor,  egreso,  sys_fecha,  sys_user,  do_concepto,  do_dep,  do_depsup,  resolfecha,  resolnum,  co_cuentacontable";
 $proto0["m_strFrom"] = "FROM gedocumentos";
 $proto0["m_strWhere"] = "(doclasedoc = 311)";
 $proto0["m_strOrderBy"] = "ORDER BY doclasedoc_id DESC";
@@ -3949,73 +4090,88 @@ $proto46["m_alias"] = "";
 $obj = new SQLFieldListItem($proto46);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto48=array();
-$proto48["m_link"] = "SQLL_MAIN";
-			$proto49=array();
-$proto49["m_strName"] = "gedocumentos";
-$proto49["m_srcTableName"] = "gedocumentos_ingresos_consumo";
-$proto49["m_columns"] = array();
-$proto49["m_columns"][] = "as_nroasiento_fk";
-$proto49["m_columns"][] = "do_concepto";
-$proto49["m_columns"][] = "do_dep";
-$proto49["m_columns"][] = "do_depsup";
-$proto49["m_columns"][] = "do_detalle";
-$proto49["m_columns"][] = "do_email";
-$proto49["m_columns"][] = "do_fechadoc";
-$proto49["m_columns"][] = "do_file";
-$proto49["m_columns"][] = "do_legaliza";
-$proto49["m_columns"][] = "do_nrodoc";
-$proto49["m_columns"][] = "do_tipodoc";
-$proto49["m_columns"][] = "do_tipomov";
-$proto49["m_columns"][] = "doccnit";
-$proto49["m_columns"][] = "doclasedoc";
-$proto49["m_columns"][] = "doclasedoc_id";
-$proto49["m_columns"][] = "docnomproveedor";
-$proto49["m_columns"][] = "docodregion";
-$proto49["m_columns"][] = "egreso";
-$proto49["m_columns"][] = "resolfecha";
-$proto49["m_columns"][] = "resolnum";
-$proto49["m_columns"][] = "sys_fecha";
-$proto49["m_columns"][] = "sys_user";
-$obj = new SQLTable($proto49);
+						$proto48=array();
+			$obj = new SQLField(array(
+	"m_strName" => "co_cuentacontable",
+	"m_strTable" => "gedocumentos",
+	"m_srcTableName" => "gedocumentos_ingresos_consumo"
+));
 
-$proto48["m_table"] = $obj;
-$proto48["m_sql"] = "gedocumentos";
-$proto48["m_alias"] = "";
+$proto48["m_sql"] = "co_cuentacontable";
 $proto48["m_srcTableName"] = "gedocumentos_ingresos_consumo";
-$proto50=array();
-$proto50["m_sql"] = "";
-$proto50["m_uniontype"] = "SQLL_UNKNOWN";
+$proto48["m_expr"]=$obj;
+$proto48["m_alias"] = "";
+$obj = new SQLFieldListItem($proto48);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto50=array();
+$proto50["m_link"] = "SQLL_MAIN";
+			$proto51=array();
+$proto51["m_strName"] = "gedocumentos";
+$proto51["m_srcTableName"] = "gedocumentos_ingresos_consumo";
+$proto51["m_columns"] = array();
+$proto51["m_columns"][] = "as_nroasiento_fk";
+$proto51["m_columns"][] = "co_cuentacontable";
+$proto51["m_columns"][] = "do_concepto";
+$proto51["m_columns"][] = "do_dep";
+$proto51["m_columns"][] = "do_depsup";
+$proto51["m_columns"][] = "do_detalle";
+$proto51["m_columns"][] = "do_email";
+$proto51["m_columns"][] = "do_fechadoc";
+$proto51["m_columns"][] = "do_file";
+$proto51["m_columns"][] = "do_legaliza";
+$proto51["m_columns"][] = "do_nrodoc";
+$proto51["m_columns"][] = "do_tipodoc";
+$proto51["m_columns"][] = "do_tipomov";
+$proto51["m_columns"][] = "doccnit";
+$proto51["m_columns"][] = "doclasedoc";
+$proto51["m_columns"][] = "doclasedoc_id";
+$proto51["m_columns"][] = "docnomproveedor";
+$proto51["m_columns"][] = "docodregion";
+$proto51["m_columns"][] = "egreso";
+$proto51["m_columns"][] = "resolfecha";
+$proto51["m_columns"][] = "resolnum";
+$proto51["m_columns"][] = "sys_fecha";
+$proto51["m_columns"][] = "sys_user";
+$obj = new SQLTable($proto51);
+
+$proto50["m_table"] = $obj;
+$proto50["m_sql"] = "gedocumentos";
+$proto50["m_alias"] = "";
+$proto50["m_srcTableName"] = "gedocumentos_ingresos_consumo";
+$proto52=array();
+$proto52["m_sql"] = "";
+$proto52["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto50["m_column"]=$obj;
-$proto50["m_contained"] = array();
-$proto50["m_strCase"] = "";
-$proto50["m_havingmode"] = false;
-$proto50["m_inBrackets"] = false;
-$proto50["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto50);
+$proto52["m_column"]=$obj;
+$proto52["m_contained"] = array();
+$proto52["m_strCase"] = "";
+$proto52["m_havingmode"] = false;
+$proto52["m_inBrackets"] = false;
+$proto52["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto52);
 
-$proto48["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto48);
+$proto50["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto50);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto52=array();
+												$proto54=array();
 						$obj = new SQLField(array(
 	"m_strName" => "doclasedoc_id",
 	"m_strTable" => "gedocumentos",
 	"m_srcTableName" => "gedocumentos_ingresos_consumo"
 ));
 
-$proto52["m_column"]=$obj;
-$proto52["m_bAsc"] = 0;
-$proto52["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto52);
+$proto54["m_column"]=$obj;
+$proto54["m_bAsc"] = 0;
+$proto54["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto54);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="gedocumentos_ingresos_consumo";		
@@ -4029,7 +4185,7 @@ $queryData_gedocumentos_ingresos_consumo = createSqlQuery_gedocumentos_ingresos_
 	
 								;
 
-																					
+																						
 
 $tdatagedocumentos_ingresos_consumo[".sqlquery"] = $queryData_gedocumentos_ingresos_consumo;
 

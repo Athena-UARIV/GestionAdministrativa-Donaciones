@@ -6,7 +6,6 @@ Runner.buttonEvents["BtnRefresh"] = function( pageObj, proxy, pageid ) {
 		pageObj.buttonEventBefore['BtnRefresh'] = function( params, ctrl, pageObj, proxy, pageid, rowData, row, submit ) {		
 			var ajax = ctrl;
 
-
 		}
 	}
 	

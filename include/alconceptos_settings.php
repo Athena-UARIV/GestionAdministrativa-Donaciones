@@ -43,6 +43,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsalconceptos["Spanish"]["cod_concepto_id"] = "Ordinal";
 	$fieldToolTipsalconceptos["Spanish"]["cod_concepto_id"] = "";
 	$placeHoldersalconceptos["Spanish"]["cod_concepto_id"] = "";
+	$fieldLabelsalconceptos["Spanish"]["co_cuentacontable"] = "Co Cuentacontable";
+	$fieldToolTipsalconceptos["Spanish"]["co_cuentacontable"] = "";
+	$placeHoldersalconceptos["Spanish"]["co_cuentacontable"] = "";
 	if (count($fieldToolTipsalconceptos["Spanish"]))
 		$tdataalconceptos[".isUseToolTips"] = true;
 }
@@ -166,6 +169,7 @@ $tdataalconceptos[".googleLikeFields"][] = "co_nomconcepto";
 $tdataalconceptos[".googleLikeFields"][] = "co_otronomconcepto";
 $tdataalconceptos[".googleLikeFields"][] = "co_ctrl";
 $tdataalconceptos[".googleLikeFields"][] = "co_tipomovto";
+$tdataalconceptos[".googleLikeFields"][] = "co_cuentacontable";
 
 
 
@@ -200,7 +204,7 @@ $tdataalconceptos[".orderindexes"] = array();
 			$tdataalconceptos[".orderindexes"][] = array(2, (1 ? "ASC" : "DESC"), "co_codconcepto");
 
 
-$tdataalconceptos[".sqlHead"] = "SELECT cod_concepto_id,  co_codconcepto,  co_nomconcepto,  co_otronomconcepto,  co_ctrl,  co_tipomovto";
+$tdataalconceptos[".sqlHead"] = "SELECT cod_concepto_id,  co_codconcepto,  co_nomconcepto,  co_otronomconcepto,  co_ctrl,  co_tipomovto,  co_cuentacontable";
 $tdataalconceptos[".sqlFrom"] = "FROM alconceptos";
 $tdataalconceptos[".sqlWhereExpr"] = "";
 $tdataalconceptos[".sqlTail"] = "";
@@ -1171,6 +1175,145 @@ $tdataalconceptos[".hideMobileList"] = array();
 
 	$tdataalconceptos["co_tipomovto"] = $fdata;
 		$tdataalconceptos[".searchableFields"][] = "co_tipomovto";
+//	co_cuentacontable
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 7;
+	$fdata["strName"] = "co_cuentacontable";
+	$fdata["GoodName"] = "co_cuentacontable";
+	$fdata["ownerTable"] = "alconceptos";
+	$fdata["Label"] = GetFieldLabel("alconceptos","co_cuentacontable");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "co_cuentacontable";
+
+		$fdata["sourceSingle"] = "co_cuentacontable";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "co_cuentacontable";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=13";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataalconceptos["co_cuentacontable"] = $fdata;
+		$tdataalconceptos[".searchableFields"][] = "co_cuentacontable";
 
 
 $tables_data["alconceptos"]=&$tdataalconceptos;
@@ -1215,7 +1358,7 @@ function createSqlQuery_alconceptos()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "cod_concepto_id,  co_codconcepto,  co_nomconcepto,  co_otronomconcepto,  co_ctrl,  co_tipomovto";
+$proto0["m_strFieldList"] = "cod_concepto_id,  co_codconcepto,  co_nomconcepto,  co_otronomconcepto,  co_ctrl,  co_tipomovto,  co_cuentacontable";
 $proto0["m_strFrom"] = "FROM alconceptos";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY co_codconcepto";
@@ -1339,58 +1482,73 @@ $proto16["m_alias"] = "";
 $obj = new SQLFieldListItem($proto16);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto18=array();
-$proto18["m_link"] = "SQLL_MAIN";
-			$proto19=array();
-$proto19["m_strName"] = "alconceptos";
-$proto19["m_srcTableName"] = "alconceptos";
-$proto19["m_columns"] = array();
-$proto19["m_columns"][] = "co_activo";
-$proto19["m_columns"][] = "co_codconcepto";
-$proto19["m_columns"][] = "co_ctrl";
-$proto19["m_columns"][] = "co_nomconcepto";
-$proto19["m_columns"][] = "co_otronomconcepto";
-$proto19["m_columns"][] = "co_tipomovto";
-$proto19["m_columns"][] = "cod_concepto_id";
-$obj = new SQLTable($proto19);
+						$proto18=array();
+			$obj = new SQLField(array(
+	"m_strName" => "co_cuentacontable",
+	"m_strTable" => "alconceptos",
+	"m_srcTableName" => "alconceptos"
+));
 
-$proto18["m_table"] = $obj;
-$proto18["m_sql"] = "alconceptos";
-$proto18["m_alias"] = "";
+$proto18["m_sql"] = "co_cuentacontable";
 $proto18["m_srcTableName"] = "alconceptos";
-$proto20=array();
-$proto20["m_sql"] = "";
-$proto20["m_uniontype"] = "SQLL_UNKNOWN";
+$proto18["m_expr"]=$obj;
+$proto18["m_alias"] = "";
+$obj = new SQLFieldListItem($proto18);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto20=array();
+$proto20["m_link"] = "SQLL_MAIN";
+			$proto21=array();
+$proto21["m_strName"] = "alconceptos";
+$proto21["m_srcTableName"] = "alconceptos";
+$proto21["m_columns"] = array();
+$proto21["m_columns"][] = "co_activo";
+$proto21["m_columns"][] = "co_codconcepto";
+$proto21["m_columns"][] = "co_ctrl";
+$proto21["m_columns"][] = "co_cuentacontable";
+$proto21["m_columns"][] = "co_nomconcepto";
+$proto21["m_columns"][] = "co_otronomconcepto";
+$proto21["m_columns"][] = "co_tipomovto";
+$proto21["m_columns"][] = "cod_concepto_id";
+$obj = new SQLTable($proto21);
+
+$proto20["m_table"] = $obj;
+$proto20["m_sql"] = "alconceptos";
+$proto20["m_alias"] = "";
+$proto20["m_srcTableName"] = "alconceptos";
+$proto22=array();
+$proto22["m_sql"] = "";
+$proto22["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto20["m_column"]=$obj;
-$proto20["m_contained"] = array();
-$proto20["m_strCase"] = "";
-$proto20["m_havingmode"] = false;
-$proto20["m_inBrackets"] = false;
-$proto20["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto20);
+$proto22["m_column"]=$obj;
+$proto22["m_contained"] = array();
+$proto22["m_strCase"] = "";
+$proto22["m_havingmode"] = false;
+$proto22["m_inBrackets"] = false;
+$proto22["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto22);
 
-$proto18["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto18);
+$proto20["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto20);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto22=array();
+												$proto24=array();
 						$obj = new SQLField(array(
 	"m_strName" => "co_codconcepto",
 	"m_strTable" => "alconceptos",
 	"m_srcTableName" => "alconceptos"
 ));
 
-$proto22["m_column"]=$obj;
-$proto22["m_bAsc"] = 1;
-$proto22["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto22);
+$proto24["m_column"]=$obj;
+$proto24["m_bAsc"] = 1;
+$proto24["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto24);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="alconceptos";		
@@ -1404,7 +1562,7 @@ $queryData_alconceptos = createSqlQuery_alconceptos();
 	
 								;
 
-						
+							
 
 $tdataalconceptos[".sqlquery"] = $queryData_alconceptos;
 

@@ -175,6 +175,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel cgc_consulta Descripcion }","bold":true},{"text":{$Descripcion_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel cgc_consulta Imputable }","bold":true},{"text":{$Imputable_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

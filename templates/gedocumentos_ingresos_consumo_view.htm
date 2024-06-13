@@ -968,7 +968,6 @@
 	{$cell_grid_c13}
 	class=" r-ori-vert"
 	
-			data-single
 			
 	ocolspan="3"		data-cellId="grid_c13" data-pageid="{$pageid}"
 		data-v-cell="6"
@@ -996,6 +995,27 @@
 
 
 {END do_file_fieldblock}
+											
+{BEGIN co_cuentacontable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_co_cuentacontable}  r-vertical-field" data-fieldname="co_cuentacontable" data-signal-error-for="co_cuentacontable{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="co_cuentacontable" data-fieldname="co_cuentacontable" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_co_cuentacontable}">
+		
+		{BEGIN co_cuentacontable_label}{$label gedocumentos_ingresos_consumo co_cuentacontable }{END co_cuentacontable_label}
+	</label>
+	<div class="" >
+		{$co_cuentacontable_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END co_cuentacontable_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c13}

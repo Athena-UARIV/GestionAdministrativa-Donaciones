@@ -3718,6 +3718,12 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "tparam_direcc_territoriales" ] = "tparam_direcc_territoriales";
 	$projectEntities[ "q_divipola" ] = array( "url" => "q_divipola", "type" => 0 );
 	$projectEntitiesReverse[ "q_divipola" ] = "q_divipola";
+	$projectEntities[ "alasientos_gestion_t" ] = array( "url" => "alasientos_gestion_t", "type" => 1 );
+	$projectEntitiesReverse[ "alasientos_gestion_t" ] = "alasientos_gestion_t";
+	$projectEntities[ "gedocumentos_egresos_consumo_t" ] = array( "url" => "gedocumentos_egresos_consumo_t", "type" => 1 );
+	$projectEntitiesReverse[ "gedocumentos_egresos_consumo_t" ] = "gedocumentos_egresos_consumo_t";
+	$projectEntities[ "almovconsdia_egresos_t" ] = array( "url" => "almovconsdia_egresos_t", "type" => 1 );
+	$projectEntitiesReverse[ "almovconsdia_egresos_t" ] = "almovconsdia_egresos_t";
 }
 
 function findTable( $table ) {

@@ -343,6 +343,12 @@ function checkTableName($shortTName )
 		return true;
 	if ("q_divipola" == $shortTName )
 		return true;
+	if ("alasientos_gestion_t" == $shortTName )
+		return true;
+	if ("gedocumentos_egresos_consumo_t" == $shortTName )
+		return true;
+	if ("almovconsdia_egresos_t" == $shortTName )
+		return true;
 	return false;
 }
 
@@ -1023,6 +1029,33 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="q_divipola";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("alasientos_gestion_t");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="alasientos_gestion_t";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("gedocumentos_egresos_consumo_t");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="gedocumentos_egresos_consumo_t";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("almovconsdia_egresos_t");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="almovconsdia_egresos_t";
+	}
 	return $arr;
 }
 
@@ -1102,6 +1135,9 @@ function GetTablesListWithoutSecurity()
 	$arr[]="q_ctrl_saldo_consumo_consulta";
 	$arr[]="tparam_direcc_territoriales";
 	$arr[]="q_divipola";
+	$arr[]="alasientos_gestion_t";
+	$arr[]="gedocumentos_egresos_consumo_t";
+	$arr[]="almovconsdia_egresos_t";
 	return $arr;
 }
 
@@ -2069,6 +2105,21 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="q_divipola" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="alasientos_gestion_t" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="gedocumentos_egresos_consumo_t" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="almovconsdia_egresos_t" )
 	{
 //	default permissions
 		return "ADESPI".$extraPerm;

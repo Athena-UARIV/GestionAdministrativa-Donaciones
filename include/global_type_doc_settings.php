@@ -6,11 +6,11 @@ $tdataglobal_type_doc[".OwnerID"] = "";
 $tdataglobal_type_doc[".OriginalTable"] = "global_type_doc";
 
 
-$tdataglobal_type_doc[".pagesByType"] = my_json_decode( "{}" );
+$tdataglobal_type_doc[".pagesByType"] = my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"]}" );
 $tdataglobal_type_doc[".originalPagesByType"] = $tdataglobal_type_doc[".pagesByType"];
-$tdataglobal_type_doc[".pages"] = types2pages( my_json_decode( "{}" ) );
+$tdataglobal_type_doc[".pages"] = types2pages( my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"]}" ) );
 $tdataglobal_type_doc[".originalPages"] = $tdataglobal_type_doc[".pages"];
-$tdataglobal_type_doc[".defaultPages"] = my_json_decode( "{}" );
+$tdataglobal_type_doc[".defaultPages"] = my_json_decode( "{\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\"}" );
 $tdataglobal_type_doc[".originalDefaultPages"] = $tdataglobal_type_doc[".defaultPages"];
 
 //	field labels

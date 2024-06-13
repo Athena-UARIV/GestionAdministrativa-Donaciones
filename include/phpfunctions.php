@@ -1054,6 +1054,11 @@ function fileCustomExpression($file, $data, $field, $ptype, $table )
 		;
 		return $value;
 	}
+				if($table=="gedocumentos_egresos_consumo_t" && $field=="do_file")
+	{
+		;
+		return $value;
+	}
 	return $value;
 }
 
@@ -1286,6 +1291,26 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return 0;
 	}
+				if($table=="alasientos_gestion_t" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="gedocumentos_egresos_consumo_t" && $field=="do_tipomov")
+	{
+		return 2;
+	}
+				if($table=="gedocumentos_egresos_consumo_t" && $field=="doclasedoc")
+	{
+		return 310;
+	}
+				if($table=="gedocumentos_egresos_consumo_t" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="almovconsdia_egresos_t" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
 	return "";
 }
 
@@ -1504,6 +1529,26 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 				if($table=="aldevindiv_sol_vinc_a" && $field=="transactvinc_status")
 	{
 		return 0;
+	}
+				if($table=="alasientos_gestion_t" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="gedocumentos_egresos_consumo_t" && $field=="do_tipomov")
+	{
+		return 2;
+	}
+				if($table=="gedocumentos_egresos_consumo_t" && $field=="doclasedoc")
+	{
+		return 310;
+	}
+				if($table=="gedocumentos_egresos_consumo_t" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="almovconsdia_egresos_t" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
 	}
 	return "";
 }

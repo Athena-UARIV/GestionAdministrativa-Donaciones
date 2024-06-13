@@ -518,6 +518,12 @@ class Chart
 			return true;
 		if("q_divipola" == $this->chrt_array['tables'][0])
 			return true;
+		if("alasientos" == $this->chrt_array['tables'][0])
+			return true;
+		if("gedocumentos" == $this->chrt_array['tables'][0])
+			return true;
+		if("almovconsdiae" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 

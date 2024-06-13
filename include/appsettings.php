@@ -760,9 +760,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "1073_1718244866";
+$projectBuildKey = "1075_1718244866";
 $wizardBuildKey = "41974";
-$projectBuildNumber = "1073";
+$projectBuildNumber = "1075";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -848,7 +848,7 @@ $tableCaptions["Spanish"]["almovinddia"] = "Almovinddia";
 $tableCaptions["Spanish"]["almovinddia_legalizados"] = "Placas legalizadas";
 $tableCaptions["Spanish"]["almovdevdia"] = "Almovdevdia";
 $tableCaptions["Spanish"]["q_ctrl_numasientos"] = "Q Ctrl Numasientos";
-$tableCaptions["Spanish"]["almovconsdia_egresos"] = "Egreso elementos de consumo";
+$tableCaptions["Spanish"]["almovconsdia_egresos"] = "Egreso elementos";
 $tableCaptions["Spanish"]["almovconsdia_consulta"] = "Almovconsdia Consulta";
 $tableCaptions["Spanish"]["aldevindiv_sol_vinc_a"] = "Reintegro | Traslado";
 $tableCaptions["Spanish"]["Dashboard"] = "Dashboard";
@@ -858,6 +858,9 @@ $tableCaptions["Spanish"]["contractor_type"] = "Contractor Type";
 $tableCaptions["Spanish"]["q_ctrl_saldo_consumo_consulta"] = "Salida de elementos";
 $tableCaptions["Spanish"]["tparam_direcc_territoriales"] = "Direcciones territoriales";
 $tableCaptions["Spanish"]["q_divipola"] = "DIVIPOLA";
+$tableCaptions["Spanish"]["alasientos_gestion_t"] = "Gestión | Traslados";
+$tableCaptions["Spanish"]["gedocumentos_egresos_consumo_t"] = "Traslado";
+$tableCaptions["Spanish"]["almovconsdia_egresos_t"] = "Traslado elementos";
 
 
 $globalEvents = new class_GlobalEvents;

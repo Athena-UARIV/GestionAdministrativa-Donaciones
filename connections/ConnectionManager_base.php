@@ -312,6 +312,9 @@ class ConnectionManager_Base
 		$connectionsIds["q_ctrl_saldo_consumo_consulta"] = "dbrf_at_127_0_0_1";
 		$connectionsIds["tparam_direcc_territoriales"] = "dbrf_at_127_0_0_1";
 		$connectionsIds["q_divipola"] = "dbusers_at_127_0_0_1";
+		$connectionsIds["alasientos_gestion_t"] = "dbrf_at_127_0_0_1";
+		$connectionsIds["gedocumentos_egresos_consumo_t"] = "dbrf_at_127_0_0_1";
+		$connectionsIds["almovconsdia_egresos_t"] = "dbrf_at_127_0_0_1";
 
 		$this->_tablesConnectionIds = &$connectionsIds;
 	}

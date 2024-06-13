@@ -1146,6 +1146,90 @@ function InitLookupLinks()
 			$lookupTableLinks["q_divipola"]["tparam_direcc_territoriales.ciudad_terr"] = array();
 		}
 		$lookupTableLinks["q_divipola"]["tparam_direcc_territoriales.ciudad_terr"]["edit"] = array("table" => "tparam_direcc_territoriales", "field" => "ciudad_terr", "page" => "edit");
+		if( !isset( $lookupTableLinks["tparam_estadoasientos"] ) ) {
+			$lookupTableLinks["tparam_estadoasientos"] = array();
+		}
+		if( !isset( $lookupTableLinks["tparam_estadoasientos"]["alasientos_gestion_t.as_estadoasien"] )) {
+			$lookupTableLinks["tparam_estadoasientos"]["alasientos_gestion_t.as_estadoasien"] = array();
+		}
+		$lookupTableLinks["tparam_estadoasientos"]["alasientos_gestion_t.as_estadoasien"]["edit"] = array("table" => "alasientos_gestion_t", "field" => "as_estadoasien", "page" => "edit");
+		if( !isset( $lookupTableLinks["inv_almacen"] ) ) {
+			$lookupTableLinks["inv_almacen"] = array();
+		}
+		if( !isset( $lookupTableLinks["inv_almacen"]["alasientos_gestion_t.ascodalmacen"] )) {
+			$lookupTableLinks["inv_almacen"]["alasientos_gestion_t.ascodalmacen"] = array();
+		}
+		$lookupTableLinks["inv_almacen"]["alasientos_gestion_t.ascodalmacen"]["edit"] = array("table" => "alasientos_gestion_t", "field" => "ascodalmacen", "page" => "edit");
+		if( !isset( $lookupTableLinks["alasientos_gestion"] ) ) {
+			$lookupTableLinks["alasientos_gestion"] = array();
+		}
+		if( !isset( $lookupTableLinks["alasientos_gestion"]["gedocumentos_egresos_consumo_t.as_nroasiento_fk"] )) {
+			$lookupTableLinks["alasientos_gestion"]["gedocumentos_egresos_consumo_t.as_nroasiento_fk"] = array();
+		}
+		$lookupTableLinks["alasientos_gestion"]["gedocumentos_egresos_consumo_t.as_nroasiento_fk"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "as_nroasiento_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_ctrl_numdocumento"] ) ) {
+			$lookupTableLinks["q_ctrl_numdocumento"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_ctrl_numdocumento"]["gedocumentos_egresos_consumo_t.docodregion"] )) {
+			$lookupTableLinks["q_ctrl_numdocumento"]["gedocumentos_egresos_consumo_t.docodregion"] = array();
+		}
+		$lookupTableLinks["q_ctrl_numdocumento"]["gedocumentos_egresos_consumo_t.docodregion"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "docodregion", "page" => "edit");
+		if( !isset( $lookupTableLinks["tparam_tipo_movimiento"] ) ) {
+			$lookupTableLinks["tparam_tipo_movimiento"] = array();
+		}
+		if( !isset( $lookupTableLinks["tparam_tipo_movimiento"]["gedocumentos_egresos_consumo_t.do_tipomov"] )) {
+			$lookupTableLinks["tparam_tipo_movimiento"]["gedocumentos_egresos_consumo_t.do_tipomov"] = array();
+		}
+		$lookupTableLinks["tparam_tipo_movimiento"]["gedocumentos_egresos_consumo_t.do_tipomov"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "do_tipomov", "page" => "edit");
+		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
+			$lookupTableLinks["contractor_master"] = array();
+		}
+		if( !isset( $lookupTableLinks["contractor_master"]["gedocumentos_egresos_consumo_t.doccnit"] )) {
+			$lookupTableLinks["contractor_master"]["gedocumentos_egresos_consumo_t.doccnit"] = array();
+		}
+		$lookupTableLinks["contractor_master"]["gedocumentos_egresos_consumo_t.doccnit"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "doccnit", "page" => "edit");
+		if( !isset( $lookupTableLinks["geclasedocto"] ) ) {
+			$lookupTableLinks["geclasedocto"] = array();
+		}
+		if( !isset( $lookupTableLinks["geclasedocto"]["gedocumentos_egresos_consumo_t.doclasedoc"] )) {
+			$lookupTableLinks["geclasedocto"]["gedocumentos_egresos_consumo_t.doclasedoc"] = array();
+		}
+		$lookupTableLinks["geclasedocto"]["gedocumentos_egresos_consumo_t.doclasedoc"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "doclasedoc", "page" => "edit");
+		if( !isset( $lookupTableLinks["alconceptos"] ) ) {
+			$lookupTableLinks["alconceptos"] = array();
+		}
+		if( !isset( $lookupTableLinks["alconceptos"]["gedocumentos_egresos_consumo_t.do_concepto"] )) {
+			$lookupTableLinks["alconceptos"]["gedocumentos_egresos_consumo_t.do_concepto"] = array();
+		}
+		$lookupTableLinks["alconceptos"]["gedocumentos_egresos_consumo_t.do_concepto"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "do_concepto", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["gedocumentos_egresos_consumo_t.do_dep"] )) {
+			$lookupTableLinks["dependencia"]["gedocumentos_egresos_consumo_t.do_dep"] = array();
+		}
+		$lookupTableLinks["dependencia"]["gedocumentos_egresos_consumo_t.do_dep"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "do_dep", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencias_001"] ) ) {
+			$lookupTableLinks["dependencias_001"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencias_001"]["gedocumentos_egresos_consumo_t.do_depsup"] )) {
+			$lookupTableLinks["dependencias_001"]["gedocumentos_egresos_consumo_t.do_depsup"] = array();
+		}
+		$lookupTableLinks["dependencias_001"]["gedocumentos_egresos_consumo_t.do_depsup"]["edit"] = array("table" => "gedocumentos_egresos_consumo_t", "field" => "do_depsup", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_ctrl_saldo_consumo_consulta"] ) ) {
+			$lookupTableLinks["q_ctrl_saldo_consumo_consulta"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_ctrl_saldo_consumo_consulta"]["almovconsdia_egresos_t.almovconsdia_id_fk"] )) {
+			$lookupTableLinks["q_ctrl_saldo_consumo_consulta"]["almovconsdia_egresos_t.almovconsdia_id_fk"] = array();
+		}
+		$lookupTableLinks["q_ctrl_saldo_consumo_consulta"]["almovconsdia_egresos_t.almovconsdia_id_fk"]["edit"] = array("table" => "almovconsdia_egresos_t", "field" => "almovconsdia_id_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["inv_almacen"] ) ) {
+			$lookupTableLinks["inv_almacen"] = array();
+		}
+		if( !isset( $lookupTableLinks["inv_almacen"]["almovconsdia_egresos_t.mcdalmacen"] )) {
+			$lookupTableLinks["inv_almacen"]["almovconsdia_egresos_t.mcdalmacen"] = array();
+		}
+		$lookupTableLinks["inv_almacen"]["almovconsdia_egresos_t.mcdalmacen"]["edit"] = array("table" => "almovconsdia_egresos_t", "field" => "mcdalmacen", "page" => "edit");
 }
 
 ?>

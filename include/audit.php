@@ -636,6 +636,18 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="alasientos_gestion_t")
+		{
+			return false;
+		}
+		if($table=="gedocumentos_egresos_consumo_t")
+		{
+			return false;
+		}
+		if($table=="almovconsdia_egresos_t")
+		{
+			return false;
+		}
 	}
 
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -1221,6 +1233,18 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="q_divipola")
+		{
+			return false;
+		}
+		if($table=="alasientos_gestion_t")
+		{
+			return false;
+		}
+		if($table=="gedocumentos_egresos_consumo_t")
+		{
+			return false;
+		}
+		if($table=="almovconsdia_egresos_t")
 		{
 			return false;
 		}
